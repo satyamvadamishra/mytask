@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="form.js"></script>
+<body>
+	<style> 
+table, th, td { 
+	width: 100;
+    border: 1px solid black; 
+    border-collapse: collapse; 
+} 
+.text{
+  float: left;
+  margin-left: 50px;
+  padding: 20px;
+}
+.text input{
+  display: block;
+  margin-bottom: 15px;
+}
+
+</style>
+<form class="form">
+	<label>
+		<table id="table"> 
+  <tr> 
+    <th>Firstname</th> 
+    <th>Lastname</th>  
+    <th>Age</th> 
+    <th>Mobilenumber</th>
+    <th>Emailid</th>
+  </tr>
+ </table> 
+</label>
+ <div class="text">
+ <label>
+ firstname:<input type="text" name="fname" placeholder="fname" id="fname">
+</label>
+<label>
+ lastname:<input type="text" name="lname" placeholder="lname" id="lname">
+</label>
+<label>
+  age:<input type="number" name="age" placeholder="age" id="age">
+</label>
+<label>
+  mobilenumber:<input type="text" name="mobilenumber" placeholder="mobilenumber" id="mobilenumber">
+</label>
+<label>
+  emailid:<input type="text" name="emailid" placeholder="emailid" id="emailid">
+</label>
+</div>
+<div>
+<label>
+<input type="button" value="add to cart" onclick="add();">
+</label>
+<label>
+	<input type="button" value="remove" onclick="remove();">
+</label>
+<label>
+  <input type="button" value="eddit" onclick="eddit();">
+</label>
+</div>
+</form>
+
+</body>
+</html>
